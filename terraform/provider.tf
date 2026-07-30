@@ -1,6 +1,6 @@
 terraform {
     required_version = ">=1.5.0"
-    required-providers {
+    required_providers {
         aws = {
            source = "hashicorp/aws"
            version = "~>5.0"
@@ -10,7 +10,7 @@ terraform {
 }
 provider "aws" {
    region = var.aws_region
-   default tags {
+   default_tags {
         tags = {
            Project = "Jerney"
            Environment = var.environment
